@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="188dp"
+    android:background="#FFFFFF">
+
+    <LinearLayout
+        android:id="@+id/test_grid"
+        android:layout_width="178dp"
+        android:layout_height="174dp"
+        android:background="@drawable/grid_bkg"
+        android:backgroundTint="#4D66E9F8"
+        android:backgroundTintMode="multiply"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="0dp">
+
+        <View
+            android:id="@+id/carry_tab"
+            android:layout_width="wrap_content"
+            android:layout_height="5dp"
+            android:background="#08BD26" />
+
+        <TextView
+            android:id="@+id/course_code"
+            android:layout_width="match_parent"
+            android:layout_height="31dp"
+            android:fontFamily="sans-serif-black"
+            android:text="CPE 543"
+            android:textAlignment="center"
+            android:textColor="@color/design_default_color_on_secondary"
+            android:textSize="26sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/course_title"
+            android:layout_width="match_parent"
+            android:layout_height="31dp"
+            android:fontFamily="sans-serif-black"
+            android:text="Introduction to Robotics"
+            android:textAlignment="center"
+            android:textSize="14sp" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="58dp"
+            android:background="#FFFFFF"
+            tools:layout_editor_absoluteY="159dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="49dp"
+            android:layout_marginLeft="3sp"
+            android:layout_marginRight="3sp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/lecturer"
+                android:layout_width="115dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="Professor Abdulrahman"
+                android:textAlignment="textStart"
+                android:textColor="#392727"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/course_unit"
+                android:layout_width="wrap_content"
+                android:layout_height="55dp"
+                android:text="3 UNIT"
+                android:textAlignment="viewEnd"
+                android:textColor="@color/design_default_color_on_secondary"
+                android:textSize="19sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
